@@ -1,0 +1,229 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("https://www.rd.com/wp-content/uploads/2016/09/03-not-weird-facts-rain-Mr_Twister.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    background-attachment: fixed;
+
+}
+
+#Page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+
+}
+
+
+
+#AboutMe {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73)), url("https://fox5sandiego.com/wp-content/uploads/sites/15/2021/12/AdobeStock_366903907-e1640748488433.jpeg?strip=1")
+}
+
+#StartingPage {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73)), url("https://img.freepik.com/free-photo/rain-water-drop-falling-city-street-floor-heavy-rain-day_1962-2005.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#StartingPage div {
+    position: relative;
+    top: -40px;
+}
+
+#StartingPage div h1 {
+    color: #3b484f;
+    font-family: 'Gantari', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+}
+
+.title {
+    font-family: 'Gantari', sans-serif;
+    font-size: 3rem;
+    margin-top: 0px;
+    letter-spacing: .75rem;
+}
+
+#infocontainer {
+    display: flex;
+}
+
+.logo {
+    width: auto;
+    height: 5rem;
+    display: inline-block;
+    filter: brightness(0);
+}
+
+#accounts {
+    width: 50%;
+    text-align: center;
+}
+
+.divider {
+    min-width: 100%;
+    min-height: 20%;
+    padding: 0px;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.741);
+}
+
+.progressrows {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+
+}
+
+#Projects:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.progressrows:not(:first-of-type) {
+    margin-top: 15%;
+
+}
+
+.progressrows:first-of-type {
+    margin-top: 10%;
+
+}
+
+.progressrows:nth-of-type(even) {
+    float: right;
+}
+
+.progressrows:nth-of-type(even)>p {
+    margin-right: 5rem;
+    margin-left: 2rem;
+
+}
+
+.progressrows:nth-of-type(even)>a {
+    margin-right: 3rem;
+}
+
+.progressrows:nth-of-type(odd) {
+    float: left;
+}
+
+.progressrows:nth-of-type(odd)>p {
+    margin-left: 5rem;
+    margin-right: 2rem;
+
+}
+
+.progressrows:nth-of-type(odd)>a {
+    margin-left: 3rem;
+}
+
+.projectsimage {
+    min-height: 10rem;
+    height: auto;
+    width: 35rem;
+    display: block;
+    background: transparent;
+    padding: .5rem;
+    border: 25px solid #B88846;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+
+}
+
+#Projects {
+    background: rgba(0, 0, 0, 0.93);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#menu {
+    position: fixed;
+    left: 5rem;
+    top: 5rem;
+}
+
+#navbaropen {
+    font-size: 2rem;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    color: white;
+    text-align: center;
+    background-color: #3b484f;
+    border: #21282c solid .5rem;
+}
+#navbaropen:active {
+    background-color: #21282c;
+    border-color: #3b484f;
+    }
+.navbuttons {
+    opacity:0;
+    font-size: 2rem;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    color: white;
+    text-align: center;
+    background-color: #3b484f;
+    border: #21282c solid .5rem;
+
+}
+.navbuttons:active {
+    background-color: #21282c;
+    border-color: #3b484f;
+    }
+@keyframes fade-out {
+    0% {opacity: 1;}
+    50% {opacity: .5;}
+    100% {opacity: 0;}
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50% {opacity: .5;}
+    100% {opacity: 1;}
+}
+#TechnicalSkills {
+    background: linear-gradient(to bottom, rgba(104, 155, 165, 0.52), rgba(31, 38, 39, 0.73)), url('https://cff2.earth.com/uploads/2018/11/12235505/what-is-rain.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+li i {
+    width:5rem;
+    height: 5rem;
+}
