@@ -218,7 +218,14 @@ body {
     width: 100vw;
     
 }
-
+#ContactMe {
+    background: linear-gradient(to bottom, rgba(104, 155, 165, 0.73), rgba(31, 38, 39, 0.73));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 35vh;
+    width: 100vw;
+    
+}
 li {
     display: flex;
     align-items: center;
