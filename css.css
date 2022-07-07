@@ -8,7 +8,6 @@ body {
     background-size: 100%;
     overflow-x: hidden;
     background-attachment: fixed;
-
 }
 
 #Page {
@@ -75,7 +74,7 @@ body {
     width: auto;
     height: 5rem;
     display: inline-block;
-    filter: brightness(0);
+    filter: brightness(100);
 }
 
 #accounts {
@@ -107,7 +106,7 @@ body {
 }
 
 .progressrows:not(:first-of-type) {
-    margin-top: 15%;
+    margin-top: 25%;
 
 }
 
@@ -160,12 +159,14 @@ body {
     background: rgba(0, 0, 0, 0.93);
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(176, 176, 176);
     font-size: 1.25rem;
 }
 
 #menu {
     position: fixed;
+    display: block;
+    width: 4rem;
     left: 5rem;
     top: 5rem;
 }
@@ -180,12 +181,14 @@ body {
     background-color: #3b484f;
     border: #21282c solid .5rem;
 }
+
 #navbaropen:active {
     background-color: #21282c;
     border-color: #3b484f;
-    }
+}
+
 .navbuttons {
-    opacity:0;
+    opacity: 0;
     font-size: 2rem;
     width: 4rem;
     border-radius: 50%;
@@ -194,43 +197,84 @@ body {
     text-align: center;
     background-color: #3b484f;
     border: #21282c solid .5rem;
-
 }
+
 .navbuttons:active {
     background-color: #21282c;
     border-color: #3b484f;
-    }
+}
+
 @keyframes fade-out {
-    0% {opacity: 1;}
-    50% {opacity: .5;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
 @keyframes fade-in {
-    0% {opacity: 0;}
-    50% {opacity: .5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 #TechnicalSkills {
     background: linear-gradient(to bottom, rgba(104, 155, 165, 0.52), rgba(31, 38, 39, 0.73)), url('https://cff2.earth.com/uploads/2018/11/12235505/what-is-rain.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     width: 100vw;
-    
+
 }
+
 #ContactMe {
-    background: linear-gradient(to bottom, rgba(104, 155, 165, 0.73), rgba(31, 38, 39, 0.73));
+    background: linear-gradient(to bottom, rgba(83, 124, 132, 0.845), rgba(31, 38, 39, 0.84));
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 35vh;
+    padding-bottom: 0px;
     width: 100vw;
-    
+    height: 100vh;
+
+
 }
+
 li {
     display: flex;
     align-items: center;
 }
+
 li i {
-    width:5rem;
+    width: 5rem;
     height: 5rem;
+}
+
+.redglow:hover {
+    box-shadow: 0 1rem 3rem rgba(142, 91, 53, 0.8);
+}
+
+.grow:hover > * {
+    transform: scale(1.1);
+
+}
+.darktextshadow {
+    text-shadow: .1rem .1rem #21282c;
+
+}
+.lighttextshadow {
+    text-shadow: .1rem .1rem #93b1c4;
+
 }
